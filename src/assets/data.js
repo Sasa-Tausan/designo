@@ -48,10 +48,7 @@ const projectDataList = [
     name: "web design",
 
     images: {
-      desktop: {
-        large: webImgDesktopLarge,
-        small: webImgDesktopSmall,
-      },
+      desktop: webImgDesktopLarge,
       tablet: webImgTablet,
       mobile: webImgMobile,
     },
@@ -138,6 +135,7 @@ const projectPageData = [
         },
       },
     ],
+    bgClass: "bg-web",
   },
   {
     name: "app design",
@@ -192,6 +190,7 @@ const projectPageData = [
         },
       },
     ],
+    bgClass: "bg-app",
   },
   {
     name: "graphic design",
@@ -232,6 +231,7 @@ const projectPageData = [
         },
       },
     ],
+    bgClass: "bg-graphic",
   },
 ];
 

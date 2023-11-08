@@ -45,11 +45,7 @@ const Home = () => {
               onClick={() => handleSelectedProjectPage(name)}
             >
               <picture>
-                <img
-                  src={index !== 0 ? images.desktop : images.desktop.large}
-                  alt=""
-                  className="br-15"
-                />
+                <img src={images.desktop} alt="" className="br-15" />
               </picture>
               <div className=" absolute d-flex flex-col align-center">
                 <h2 className="heading-two text-clr-white medium uppercase">
