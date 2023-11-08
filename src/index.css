@@ -42,7 +42,7 @@ a {
 
 /* set up the body */
 body {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
 
   font-weight: normal;
 
@@ -81,6 +81,11 @@ select {
   }
 }
 
+/* ========== Background Colors ========== */
+.bg-dark {
+  background-color: var(--clr-prim-black);
+}
+
 /* ========== Border radius classes ========== */
 .br-15 {
   border-radius: 15px;
@@ -111,6 +116,10 @@ select {
 
 .text-clr-white {
   color: var(--clr-prim-white);
+}
+
+.text-clr-dark-grey {
+  color: var(--clr-sec-dark-grey);
 }
 
 /* ========== Font-size ========== */
@@ -308,7 +317,7 @@ select {
 
 .home-hero-section.active::before {
   position: absolute;
-  content: "";
+  content: '';
 
   width: 100%;
   height: 100%;
@@ -350,13 +359,11 @@ select {
   grid-template-columns: 1fr 1fr;
 
   gap: 1rem;
-
-  border: 1px solid honeydew;
 }
 
 .project-link:hover::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
 
@@ -378,6 +385,30 @@ select {
 .project-link:nth-child(3) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.about-us-section {
+  position: relative;
+  background-image: url('../src/assets/shared/desktop/bg-pattern-leaf.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 150px right -250px;
+
+  margin-bottom: 25rem;
+
+  gap: 2rem;
+}
+
+.about-us-card {
+  gap: 3rem;
+}
+
+.about-us-card-content {
+  gap: 2rem;
+
+  text-align: center;
+
+  align-self: flex-end;
 }
 
 /* ========== PROJECT COMPONENT ========== */
@@ -406,15 +437,43 @@ select {
 }
 
 .bg-app {
-  background-image: url("../src/assets/app-design/desktop/bg-pattern-intro-app.svg");
+  background-image: url('../src/assets/app-design/desktop/bg-pattern-intro-app.svg');
 }
 
 .bg-web {
-  background-image: url("../src/assets/web-design/desktop/bg-pattern-intro-web.svg");
+  background-image: url('../src/assets/web-design/desktop/bg-pattern-intro-web.svg');
 }
 
 .bg-graphic {
-  background-image: url("../src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
+  background-image: url('../src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+}
+
+/* ========== FOOTER COMPONENT ========== */
+footer {
+  padding-top: 15rem;
+  padding-bottom: 4.5rem;
+}
+
+.footer-header {
+  width: 100%;
+  padding: 4.5rem 5.5vw 3rem;
+
+  margin-top: -450px;
+
+  gap: 3rem;
+  background-color: var(--clr-prim-peach);
+  background-image: url('../src/assets/shared/desktop/bg-pattern-call-to-action.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-header-content {
+  gap: 0.5rem;
+}
+
+.footer-header-content-text {
+  max-width: 350px;
 }
 
 /* ========== MEDIA BREAKPOINTS ========== */
@@ -456,6 +515,49 @@ select {
   .hero-article {
     align-items: center;
     text-align: center;
+  }
+
+  .project-section {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .project-link:nth-child(1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+  }
+
+  .project-link:nth-child(2) {
+    grid-column: 1 / 1;
+    grid-row: 2/ 3;
+  }
+
+  .project-link:nth-child(3) {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+
+  .about-us-section {
+    flex-direction: column;
+
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+
+  .about-us-card {
+    flex-direction: row;
+  }
+
+  .about-us-card-content {
+    gap: 0.5rem;
+    align-self: center;
+
+    text-align: left;
+  }
+
+  .about-us-card-content h3 {
+    align-self: flex-start;
   }
 }
 
@@ -541,5 +643,32 @@ select {
 
   .hero-image {
     margin-bottom: -30px;
+  }
+
+  .project-section {
+    padding-inline: 1.5rem;
+  }
+
+  .about-us-section {
+    flex-direction: column;
+
+    row-gap: 5rem;
+  }
+
+  .about-us-card {
+    max-width: 350px;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+  }
+
+  .about-us-card-content {
+    gap: 2rem;
+    align-self: center;
+
+    text-align: center;
+  }
+
+  .about-us-card-content h3 {
+    align-self: center;
   }
 }
