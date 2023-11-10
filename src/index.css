@@ -525,7 +525,7 @@ header {
 .article-content {
   justify-content: center;
 
-  gap: 2rem;
+  gap: 1rem;
 
   flex: 1;
 
@@ -535,14 +535,19 @@ header {
   background-size: contain;
   background-position: top -50px right;
 
-  padding-left: 5.5vw;
-  padding-right: 2rem;
+  padding-left: 3.5vw;
+  padding-right: 1rem;
 
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
+.company-hero-article-text {
+  max-width: 450px;
+}
+
 .company-hero-img {
+  flex-grow: 1;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -721,6 +726,34 @@ footer {
     margin-bottom: 25rem;
   }
 
+  /* ========== COMPANY COMPONENT ========== */
+  .company-hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .article-content {
+    align-items: center;
+
+    text-align: center;
+
+    gap: 2rem;
+
+    background-position: top -400px right 250px;
+    background-size: cover;
+
+    padding: 4rem 3.5rem;
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0;
+  }
+
+  .company-hero-img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0;
+  }
+
   /* ========== FOOTER COMPONENT ========== */
   footer {
     padding-top: 5rem;
@@ -841,6 +874,27 @@ footer {
 
   .about-us-card-content h3 {
     align-self: center;
+  }
+
+  /* ========== COMPANY COMPONENT ========== */
+
+  .article-content {
+    gap: 1.5rem;
+
+    padding: 5rem 1.5rem;
+
+    background-position: top -100px right 50px;
+    background-size: contain;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .company-hero-img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   /* ========== PROJECT COMPONENT ========== */
