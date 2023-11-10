@@ -77,3 +77,30 @@ import changeImg from "../src/assets/graphic-design/desktop/image-change.jpg";
 import scienceImg from "../src/assets/graphic-design/desktop/image-science.jpg";
 
 export { waterImg, changeImg, scienceImg };
+
+// Company page - Hero section
+import aboutImgDesktop from "../src/assets/about/desktop/image-about-hero.jpg";
+import aboutImgTablet from "../src/assets/about/tablet/image-about-hero.jpg";
+import aboutImgMobile from "../src/assets/about/mobile/image-about-hero.jpg";
+
+// Company page - Talent section
+import talentImgDesktop from "../src/assets/about/desktop/image-world-class-talent.jpg";
+import talentImgTablet from "../src/assets/about/tablet/image-world-class-talent.jpg";
+import talentImgMobile from "../src/assets/about/mobile/image-world-class-talent.jpg";
+
+// Company page - Deal section
+import dealImgDesktop from "../src/assets/about/desktop/image-real-deal.jpg";
+import dealImgTablet from "../src/assets/about/tablet/image-real-deal.jpg";
+import dealImgMobile from "../src/assets/about/mobile/image-real-deal.jpg";
+
+export {
+  aboutImgDesktop,
+  aboutImgTablet,
+  aboutImgMobile,
+  talentImgDesktop,
+  talentImgTablet,
+  talentImgMobile,
+  dealImgDesktop,
+  dealImgTablet,
+  dealImgMobile,
+};

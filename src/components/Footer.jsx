@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark d-flex">
       <div className="container d-flex flex-col align-center">
-        {path !== "/contact" && (
+        {/* {path !== "/contact" && (
           <div className="footer-top d-flex align-center space-between br-15">
             <div className="footer-header-content d-flex flex-col">
               <h2 className="heading-two medium text-clr-white">
@@ -28,7 +28,7 @@ const Footer = () => {
               get in touch
             </Link>
           </div>
-        )}
+        )} */}
 
         <div className="footer-bottom d-flex flex-col">
           <div className="d-flex align-center space-between">

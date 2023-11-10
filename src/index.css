@@ -512,8 +512,39 @@ header {
 
 .project-page-section {
   gap: 2rem;
+  max-height: 480px;
 
   margin-bottom: 20rem;
+}
+
+/* ========== COMPANY COMPONENT ========== */
+.company-hero-section {
+  width: 100%;
+}
+
+.article-content {
+  justify-content: center;
+
+  gap: 2rem;
+
+  flex: 1;
+
+  background-color: var(--clr-prim-peach);
+  background-image: url("../src/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -50px right;
+
+  padding-left: 5.5vw;
+  padding-right: 2rem;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.company-hero-img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /* ========== FOOTER COMPONENT ========== */
