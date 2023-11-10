@@ -44,6 +44,7 @@ const Footer = () => {
                     key={index}
                     to={path}
                     className="nav-item text-clr-white ls-2 uppercase "
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {name}
                   </NavLink>
