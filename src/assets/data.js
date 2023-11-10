@@ -26,6 +26,9 @@ import {
   iconPassionate,
   iconResourceful,
   iconFriendly,
+  illustrationCanada,
+  illustrationAustralia,
+  illustrationUK,
 } from '../images';
 
 const menuList = [
@@ -260,3 +263,39 @@ const projectPageData = [
 ];
 
 export { projectPageData };
+
+// Data for LocationSection component and Locations component
+const locationSectionData = [
+  {
+    country: 'canada',
+    image: illustrationCanada,
+    office: 'Designo Central Office',
+    address: '3886 Wellington Street',
+    city: 'Toronto, Ontario M9C 3J5',
+    phone: '+1 253-863-8967',
+    mail: 'contact@designo.co',
+    position: [43.64834206329405, -79.37588378969907],
+  },
+  {
+    country: 'australia',
+    image: illustrationAustralia,
+    office: 'Designo AU Office',
+    address: '19 Balonne Street',
+    city: 'New South Wales 2443',
+    phone: '(02) 6720 9092',
+    mail: 'contact@designo.au',
+    position: [-30.329213200747986, 149.7882291479251],
+  },
+  {
+    country: 'united kingdom',
+    image: illustrationUK,
+    office: 'Designo UK Office',
+    address: '13  Colorado Way',
+    city: 'Rhyd-y-fro SA8 9GA',
+    phone: '078 3115 1400',
+    mail: 'contact@designo.uk',
+    position: [53.710380073261575, -1.3417493026908776],
+  },
+];
+
+export { locationSectionData };
