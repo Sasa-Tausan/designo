@@ -42,7 +42,7 @@ a {
 
 /* set up the body */
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 
   font-weight: normal;
 
@@ -334,7 +334,7 @@ header {
 
 .home-hero-section.active::before {
   position: absolute;
-  content: '';
+  content: "";
 
   width: 100%;
   height: 100%;
@@ -380,7 +380,7 @@ header {
 
 .project-link:hover::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
 
@@ -462,15 +462,15 @@ header {
 }
 
 .bg-app {
-  background-image: url('../src/assets/app-design/desktop/bg-pattern-intro-app.svg');
+  background-image: url("../src/assets/app-design/desktop/bg-pattern-intro-app.svg");
 }
 
 .bg-web {
-  background-image: url('../src/assets/web-design/desktop/bg-pattern-intro-web.svg');
+  background-image: url("../src/assets/web-design/desktop/bg-pattern-intro-web.svg");
 }
 
 .bg-graphic {
-  background-image: url('../src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+  background-image: url("../src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
 }
 
 .project-grid {
@@ -510,6 +510,12 @@ header {
   border-bottom-right-radius: 15px;
 }
 
+.project-page-section {
+  gap: 2rem;
+
+  margin-bottom: 20rem;
+}
+
 /* ========== FOOTER COMPONENT ========== */
 footer {
   padding-top: 15rem;
@@ -524,7 +530,7 @@ footer {
 
   gap: 3rem;
   background-color: var(--clr-prim-peach);
-  background-image: url('../src/assets/shared/desktop/bg-pattern-call-to-action.svg');
+  background-image: url("../src/assets/shared/desktop/bg-pattern-call-to-action.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -678,6 +684,12 @@ footer {
     display: none;
   }
 
+  /* ========== PROJECT COMPONENT ========== */
+  .project-page-section {
+    flex-direction: column;
+    margin-bottom: 25rem;
+  }
+
   /* ========== FOOTER COMPONENT ========== */
   footer {
     padding-top: 5rem;
@@ -800,6 +812,12 @@ footer {
     align-self: center;
   }
 
+  /* ========== PROJECT COMPONENT ========== */
+  .project-page-section {
+    width: calc(100% - 3rem);
+    margin-bottom: 25rem;
+  }
+
   /* ========== FOOTER COMPONENT ========== */
 
   .footer-top {
@@ -809,7 +827,8 @@ footer {
     display: none;
   }
 
-  .footer-bottom > div {
+  .footer-bottom > div,
+  .footer-bottom > div nav {
     flex-direction: column;
     gap: 2rem;
   }
@@ -853,7 +872,7 @@ footer {
   .bg-app,
   .bg-web,
   .bg-graphic {
-    background-image: url('../src/assets/home/desktop/bg-pattern-hero-home.svg');
+    background-image: url("../src/assets/home/desktop/bg-pattern-hero-home.svg");
   }
 
   .project-grid {
