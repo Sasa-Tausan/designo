@@ -15,7 +15,7 @@ const LocationSection = () => {
             </div>
 
             <div className='country-content d-flex flex-col align-center '>
-              <h3 className='heading-three medium text-clr-dark-grey ls-5 uppercase'>
+              <h3 className='heading-three text-dark ls-5 medium uppercase'>
                 {country}
               </h3>
 

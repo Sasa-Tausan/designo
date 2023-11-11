@@ -18,10 +18,10 @@ const Contact = () => {
     <main className='container page-wrapper'>
       <section className='contact-form-section  br-15'>
         <div className='contact-info d-flex flex-col'>
-          <h1 className='heading-one text-clr-white medium capitalize'>
+          <h1 className='heading heading-one text-light medium capitalize'>
             contact us
           </h1>
-          <p className='body-text text-clr-white '>
+          <p className='body-text text-light '>
             Ready to take it to the next level? Let&apos;s talk about your
             project or idea and find out how we can help your business grow. If
             you are looking for unique digital experiences that&apos;s relatable

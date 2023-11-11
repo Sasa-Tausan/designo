@@ -86,6 +86,10 @@ select {
   background-color: var(--clr-prim-black);
 }
 
+.bg-peach {
+  background-color: var(--clr-prim-peach);
+}
+
 /* ========== Border radius classes ========== */
 .br-15 {
   border-radius: 15px;
@@ -133,19 +137,19 @@ select {
 }
 
 /* ========== Font color classes ========== */
-.text-clr-grey {
+.text-grey {
   color: var(--clr-sec-dark-grey);
 }
 
-.text-clr-white {
+.text-light {
   color: var(--clr-prim-white);
 }
 
-.text-clr-dark-grey {
+.text-dark {
   color: var(--clr-sec-dark-grey);
 }
 
-.text-clr-peach {
+.text-peach {
   color: var(--clr-prim-peach);
 }
 
@@ -196,18 +200,16 @@ select {
 }
 
 /* ========== Typography classes ========== */
+.heading {
+  line-height: 48px;
+}
+
 .heading-one {
   font-size: clamp(32px, calc(1.5vw + 26.36px), 48px);
-
-  line-height: 48px;
 }
 
 .heading-two {
   font-size: clamp(28px, calc(1.1vw + 23.77px), 40px);
-
-  line-height: 48px;
-
-  letter-spacing: 2px;
 }
 
 .heading-three {
@@ -220,12 +222,6 @@ select {
   font-size: 1rem;
 
   line-height: 26px;
-}
-
-.btn-text {
-  font-size: 0.938rem;
-
-  letter-spacing: 1px;
 }
 
 /* ========== Text transform classes ========== */

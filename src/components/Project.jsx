@@ -14,10 +14,10 @@ const Project = () => {
         className={`project-hero-section bg-project-hero-section ${bgClass} d-flex align-center justify-center  `}
       >
         <div className='project-hero-article d-flex flex-col align-center'>
-          <h1 className='heading-one text-clr-white medium capitalize '>
+          <h1 className='heading heading-one text-light medium capitalize '>
             {name}
           </h1>
-          <p className='body-text text-clr-white'>{text}</p>
+          <p className='body-text text-light'>{text}</p>
         </div>
       </section>
       <section className='project-grid'>
@@ -27,10 +27,10 @@ const Project = () => {
             <a href='#' key={index} className='card '>
               <img src={img} alt='' className='card-image' />
               <div className='card-content'>
-                <h3 className='heading-three text-clr-peach medium ls-5 uppercase'>
+                <h3 className='heading-three text-peach medium ls-5 uppercase'>
                   {title}
                 </h3>
-                <p className='body-text text-clr-dark-grey'>{cardText}</p>
+                <p className='body-text text-dark'>{cardText}</p>
               </div>
             </a>
           );
@@ -55,11 +55,11 @@ const Project = () => {
                 <img src={desktop} alt='' className='br-15' />
               </picture>
               <div className=' absolute d-flex flex-col align-center'>
-                <h2 className='heading-two text-clr-white medium uppercase'>
+                <h2 className='heading heading-two text-light medium ls-2 uppercase'>
                   {name}
                 </h2>
                 <div className='d-flex align-center space-between gap-20'>
-                  <p className='fs-15 text-clr-white medium uppercase ls-5'>
+                  <p className='fs-15 text-light medium uppercase ls-5'>
                     view projects
                   </p>
                   <img src={iconRightArrow} alt='' />

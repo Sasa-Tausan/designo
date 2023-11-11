@@ -16,10 +16,10 @@ const Home = () => {
       >
         <div className='article-wrapper d-flex flex-col '>
           <article className='hero-article d-flex flex-col '>
-            <h1 className='heading-one text-clr-white medium '>
+            <h1 className='heading heading-one text-light medium '>
               Award-winning custom designs and digital branding solutions
             </h1>
-            <p className='body-text hero-home-text text-clr-white '>
+            <p className='body-text hero-home-text text-light '>
               With over 10 years in the industry, we are experienced in creating
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
@@ -50,11 +50,11 @@ const Home = () => {
                 <img src={desktop} alt='' className='br-15' />
               </picture>
               <div className=' absolute d-flex flex-col align-center'>
-                <h2 className='heading-two text-clr-white medium uppercase'>
+                <h2 className='heading heading-two text-light medium ls-2 uppercase'>
                   {name}
                 </h2>
                 <div className='d-flex align-center space-between gap-20'>
-                  <p className='fs-15 text-clr-white medium uppercase ls-5'>
+                  <p className='fs-15 text-light medium ls-5 uppercase '>
                     view projects
                   </p>
                   <img src={iconRightArrow} alt='' />
@@ -75,10 +75,10 @@ const Home = () => {
             >
               <img src={icon} alt='' />
               <div className='about-us-card-content d-flex flex-col align-center'>
-                <h3 className='heading-three text-clr-dark-grey  medium ls-5 uppercase'>
+                <h3 className='heading-three text-dark  medium ls-5 uppercase'>
                   {title}
                 </h3>
-                <p className='body-text text-clr-dark-grey'>{text}</p>
+                <p className='body-text text-dark'>{text}</p>
               </div>
             </div>
           );

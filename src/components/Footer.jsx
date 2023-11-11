@@ -13,10 +13,10 @@ const Footer = () => {
         {path !== '/contact' && (
           <div className='footer-top d-flex align-center space-between br-15'>
             <div className='footer-header-content d-flex flex-col'>
-              <h2 className='heading-two medium text-clr-white'>
+              <h2 className='heading heading-two medium text-light ls-2'>
                 Let&apos;s talk about <br /> your project
               </h2>
-              <p className='body-text footer-header-content-text text-clr-white'>
+              <p className='body-text footer-header-content-text text-light'>
                 Ready to take it to the next level? Contact us today and find
                 out how our expertise can help your business grow.
               </p>
@@ -45,7 +45,7 @@ const Footer = () => {
                   <NavLink
                     key={index}
                     to={path}
-                    className='nav-item text-clr-white ls-2 uppercase '
+                    className='nav-item text-light ls-2 uppercase '
                     onClick={() => window.scrollTo(0, 0)}
                   >
                     {name}
@@ -57,12 +57,12 @@ const Footer = () => {
           <hr className='divider' />
           <div className=' d-flex align-center space-between'>
             <div className='address-content d-flex align-center'>
-              <div className='address d-flex flex-col body-text text-clr-white opacity-50'>
+              <div className='address d-flex flex-col body-text text-light opacity-50'>
                 <p>Designo Central Office </p>
                 <p>3886 Wellington Street</p>
                 <p>Toronto, Ontario M9C 3J</p>
               </div>
-              <div className='address d-flex flex-col body-text text-clr-white opacity-50'>
+              <div className='address d-flex flex-col body-text text-light opacity-50'>
                 <p>Designo Central Office </p>
                 <p>3886 Wellington Street</p>
                 <p>Toronto, Ontario M9C 3J</p>

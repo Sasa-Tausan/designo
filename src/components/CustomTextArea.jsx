@@ -11,11 +11,11 @@ const CustomTextArea = ({ ...props }) => {
         maxLength='150'
         {...field}
         {...props}
-        className='input-field body-text text-clr-white medium'
+        className='input-field body-text text-light medium'
       />
       {meta.touched && meta.error ? (
         <div className='error-icon-message d-flex align-center'>
-          <span className='error-message text-clr-white'>{meta.error}</span>
+          <span className='error-message text-light'>{meta.error}</span>
           <img src={iconError} alt='' />
         </div>
       ) : (

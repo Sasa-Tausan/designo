@@ -29,22 +29,22 @@ const Locations = () => {
             id={country}
           >
             <div className='office-info d-flex flex-col br-15'>
-              <h2 className='heading-two text-clr-peach medium capitalize'>
+              <h2 className='heading heading-two text-peach medium ls-2 capitalize'>
                 {country}
               </h2>
               <div className='address-info d-flex align-center'>
-                <div className='address body-text text-clr-dark-grey'>
+                <div className='address body-text text-dark'>
                   <p className='bold'>{office}</p>
                   <p>{address}</p>
                   <p>{city}</p>
                 </div>
-                <div className='contact-info body-text text-clr-dark-grey'>
+                <div className='contact-info body-text text-dark'>
                   <p className='bold'>Contact</p>
-                  <a href='tel:#' className='body-text text-clr-dark-grey'>
+                  <a href='tel:#' className='body-text text-dark'>
                     T: {phone}
                   </a>
                   <br />
-                  <a href='mailto:#' className='body-text text-clr-dark-grey'>
+                  <a href='mailto:#' className='body-text text-dark'>
                     P: {mail}
                   </a>
                 </div>
