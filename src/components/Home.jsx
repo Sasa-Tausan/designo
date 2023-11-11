@@ -25,7 +25,7 @@ const Home = () => {
               experiences. Find out more about our services.
             </p>
           </article>
-          <Link to='/about' className='btn btn-dark medium uppercase'>
+          <Link to='/company' className='btn btn-dark medium uppercase'>
             Learn More
           </Link>
         </div>
