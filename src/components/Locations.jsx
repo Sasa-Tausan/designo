@@ -5,10 +5,9 @@ import { locationSectionData } from '../assets/data';
 
 const Locations = () => {
   const location = useLocation();
-  console.log(location);
 
   const { locationId } = location.state || {};
-  console.log(locationId);
+
   useEffect(() => {
     if (locationId) {
       const section = document.getElementById(locationId);
