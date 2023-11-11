@@ -21,10 +21,7 @@ const Footer = () => {
                 out how our expertise can help your business grow.
               </p>
             </div>
-            <Link
-              to='/contact'
-              className='btn-on-dark medium text-clr-dark br-15 uppercase'
-            >
+            <Link to='/contact' className='btn btn-dark medium br-15 uppercase'>
               get in touch
             </Link>
           </div>

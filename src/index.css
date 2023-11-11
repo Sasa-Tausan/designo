@@ -92,49 +92,44 @@ select {
 }
 
 /* ========== Button classes ========== */
-.btn-on-dark {
+.btn,
+.btn-submit {
   width: fit-content;
-
   border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 500ms ease, color 500ms ease;
+}
 
+.btn-dark,
+.btn-on-light {
   padding: 1em 1.5em;
+}
 
+.btn-dark {
   background-color: var(--clr-prim-white);
 
-  border-radius: 0.5rem;
-
   color: var(--clr-prim-black);
-
-  letter-spacing: 1px;
-
-  transition: background-color 500ms ease, color 500ms ease;
-
-  cursor: pointer;
 }
 
-.btn-on-dark:hover {
+.btn-dark:hover {
   background-color: var(--clr-sec-light-peach);
   color: var(--clr-prim-white);
 }
 
-.btn-on-light {
-  width: fit-content;
-
-  padding: 1em 1.5em;
-
+.btn-light {
   background-color: var(--clr-prim-peach);
-
   color: var(--clr-prim-white);
-
-  letter-spacing: 1px;
-
-  border-radius: 0.5rem;
-
-  transition: background-color 500ms ease, color 500ms ease;
 }
 
-.btn-on-light:hover {
+.btn-light:hover {
   background-color: var(--clr-sec-light-peach);
+}
+
+.btn-submit {
+  align-self: flex-end;
+  padding-inline: 3rem;
 }
 
 /* ========== Font color classes ========== */
@@ -804,11 +799,6 @@ header {
   font-style: italic;
 
   line-height: 26px; /* 216.667% */
-}
-
-.form button {
-  align-self: flex-end;
-  padding-inline: 3rem;
 }
 
 /* ========== FOOTER COMPONENT ========== */

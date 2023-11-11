@@ -62,7 +62,7 @@ const Contact = () => {
               <button
                 type='submit'
                 disabled={isSubmitting}
-                className='btn-on-dark medium uppercase'
+                className='btn-submit btn-dark medium uppercase'
               >
                 Submit
               </button>

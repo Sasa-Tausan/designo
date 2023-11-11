@@ -23,7 +23,7 @@ const LocationSection = () => {
                 onClick={() => {
                   navigate('/locations', { state: { locationId: country } });
                 }}
-                className='btn-on-light medium uppercase'
+                className='btn btn-light medium uppercase'
               >
                 see location
               </a>
