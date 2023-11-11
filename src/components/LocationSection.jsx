@@ -1,11 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 import { locationSectionData } from '../assets/data';
+import { useContext } from 'react';
+import MyContext from './MyContext';
 
 const LocationSection = () => {
   const navigate = useNavigate();
-
+  const { path } = useContext(MyContext);
   return (
-    <section className='location-section d-flex'>
+    <section
+      className={`location-section d-flex ${
+        path === '/contact' ? 'contact' : ''
+      }`}
+    >
       {locationSectionData.map((item, index) => {
         const { country, image } = item;
         return (

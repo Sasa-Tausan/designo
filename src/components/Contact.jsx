@@ -16,7 +16,7 @@ const validationSchema = Yup.object().shape({
 const Contact = () => {
   return (
     <main className='container page-wrapper'>
-      <section className='contact-form-section  br-15'>
+      <section className='contact-form-section br-15'>
         <div className='contact-info d-flex flex-col'>
           <h1 className='heading heading-one text-light medium capitalize'>
             contact us

@@ -8,7 +8,11 @@ import { menuList } from '../assets/data';
 const Footer = () => {
   const { path } = useContext(MyContext);
   return (
-    <footer className='bg-dark d-flex'>
+    <footer
+      className={`footer bg-dark d-flex ${
+        path === '/contact' ? 'contact' : ''
+      }`}
+    >
       <div className='container d-flex flex-col align-center'>
         {path !== '/contact' && (
           <div className='footer-top d-flex align-center space-between br-15'>
@@ -21,7 +25,11 @@ const Footer = () => {
                 out how our expertise can help your business grow.
               </p>
             </div>
-            <Link to='/contact' className='btn btn-dark medium br-15 uppercase'>
+            <Link
+              to='/contact'
+              className='btn btn-dark medium br-15 uppercase'
+              onClick={() => window.scrollTo(0, 0)}
+            >
               get in touch
             </Link>
           </div>

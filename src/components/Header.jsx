@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import MyContext from './MyContext';
@@ -8,22 +8,15 @@ import { logoDark, iconClose, iconHamburger } from '../images';
 const Header = () => {
   const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(MyContext);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 650) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   return (
     <header className='relative container header d-flex align-center space-between'>
       <Link to='/'>
-        <img src={logoDark} alt='' className='logo' />
+        <img
+          src={logoDark}
+          alt=''
+          className='logo'
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
       </Link>
 
       <nav className='main-nav d-flex align-center'>
